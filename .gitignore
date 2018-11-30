@@ -1,0 +1,9 @@
+### IntelliJ IDEA ###
+.idea
+.gradle
+*.iws
+*.iml
+*.ipr
+*.keytab
+*.log
+out*
