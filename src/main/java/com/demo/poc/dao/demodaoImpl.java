@@ -20,7 +20,6 @@ public class demodaoImpl implements demodao {
   @Override
   public void createTable(Create tbdetails) throws SQLException {
     String sql = "CREATE TABLE IF NOT EXISTS " + tbdetails.getTbname() + " ( ";
-    tbdetails.getColumns().forEach((k,v)->{System.out.println("Key is:-"+k+"Value is:-"+v);});
     for (Map.Entry<String,String> m : tbdetails.getColumns().entrySet()){
       sql += m.getKey() + " " + m.getValue() + ",";
     }

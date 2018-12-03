@@ -28,7 +28,7 @@ public class DmlController {
   }
 
   @GetMapping("/viewData/{tableName}")
-  public String viewData(@PathVariable("tbname") String tableName) throws Exception {
+  public String viewData(@PathVariable("tableName") String tableName) throws Exception {
       return demoService.viewData(tableName);
   }
 
